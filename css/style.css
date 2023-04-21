@@ -1,3 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800&display=swap');
 body{
     background-color: black;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+.cover-page{
+    height:100vh;
+    position:relative;
+}
+
+.cover-page-item{
+    width:33vw;
+    height:12vh;
+    background: #222528;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:30px;
+    color:#AEB5C5;
+    text-align:center ;
+}
+
+.cover-page footer{
+    position: absolute;
+    display: flex;
+    left: 0px;
+    bottom:0px;
+    width:100%;
+    justify-content:space-between;
+}
+
+.cover-page-item:after{
+    display: block;
+    position:absolute;
+    background: black;
+    width:45px;
+    height: 45px;
+    transform: rotate(45deg);
+    top:-22px;
+    right:-22px;
+    z-index: 2;
+    content: "";
+}
+
+.cover-page-item:before{
+    display: block;
+    position:absolute;
+    background: black;
+    width:45px;
+    height: 45px;
+    transform: rotate(45deg);
+    top:-22px;
+    left:-22px;
+    z-index: 2;
+    content: "";
+}
+
+.cover-page-item:nth-child(2){
+    background-color: #FF8126;
+    color: white;
+    font-size:36px;
+}
+
+.social-wrapper{
+    display: flex;
+    justify-content: space-between;
+    width:360px;
+    padding-top: 5px;
+}
+
+.logo{
+    width:282px;
+    height:152px;
+    margin-top: 40px;
+}
+
+.nav div{
+    border-top:2px solid white;
+    border-bottom:2px solid white;
+    height:50px;
+    display: flex;
+    align-items: center;
+    padding:12px 40px 14px 16px;
+    color:white;
+    position: relative;
+}
+
+.nav{
+    display: flex;
+    margin-top: 75px;
+}
+
+.nav div::before{
+    position:absolute;
+    content:"";
+    width: 35px;
+    height:35px;
+    transform: rotate(45deg);
+    border-left:2px solid white;
+    border-bottom:2px solid white;
+    top:6px;
+    left:-17px;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+}
+
+.play{
+    padding-right:16px !important;
+    position: relative;
+    background-color:#FF8E3D;
+    box-shadow: 0px 0px 50px #FF8E3D;
+    z-index:2;
+}
+
+.play::after{
+    position: absolute;
+    content:"";
+    width: 35px;
+    height:35px;
+    transform: rotate(45deg);
+    border-right:2px solid white;
+    border-top:2px solid white;
+    left:80px;
+    top:6px;
+    background-color: #FF8E3D;
+    z-index: 1;
+}
+
+.play p{
+    z-index:2;
+}
+
+.play::before{
+    background-color: #FF8E3D;
+}
+
+.center h2:nth-child(2){
+    color:white;
+}
+
+.center h2{
+    font-size:66px;
+}
+
+.center h2:nth-child(1){
+    color:#FF8E3D;
+}
+
+.center{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.down{
+    text-align: center;
+    font-size: 26px;
+    color:white;
+    width:700px;
+    margin-left: 410px;
+    margin-top: 200px;
+}
+
+.rus{
+    color:#FF8E3D;
+}
+
+.participate{
+    height: 100vh;
+    background-image:url("../img/Background.svg");
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 7%;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    margin-left: 255px;
+    text-align: center;
+    align-items: start;
+}
+
+.block-top h2:nth-child(1){
+    font-size: 16px;
+}
+
+.block-top h2:nth-child(2){
+    font-size: 90px;
+}
+
+.block-top h2:nth-child(3){
+    font-size: 45px;
+}
+.block-top h2:nth-child(4){
+    font-size:20px;
+    width:400px;
+}
+
+.image img:nth-child(1){
+    width: 650px;
+    position: relative;
+    z-index: 3;
+}
+
+.image img:nth-child(2){
+    width: 700px !important;
+    position: absolute;
+    z-index: 4;
+    top:40px;
+    left:0px;
+}
+
+.image{
+    position: relative;
+    height:600px;
+    width:690px;
+}
+
+.card-steam{
+    width: 400px;
+    font-size:16px;
+    background-color: black;
+    padding:10px 30px 10px 30px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.card-steam::before{
+    content: "";
+    width:10px;
+    height: 10px;
+    transform: rotate(45deg);
+    background:#1A1D22;
+    position: absolute;
+    top:-5px;
+    left:-5px;
+}
+
+.first-players{
+    width:400px;
+    font-size:12px;
+    text-align: left;
+    background-color: darkgray;
+    position: relative;
+    padding:16px 20px 16px 20px;
+    margin-top:20px;
+}
+
+.first-players::after{
+    top:0px;
+    right:0px;
+    height:70px;
+    width:70px;
+    content:"";
+    background-image:url("../img/card.svg");
+    position: absolute;
+    background-size: cover;
+}
+
+.first-players .text{
+    width: 320px;
+}
+
+.button{
+    background: #FF8126;
+    width: 350px;
+    height: 40px;
+    padding-top:10px;
+    margin-left: 25px;
+    margin-top: 28px;
+    box-shadow: 0px 0px 50px #FF8E3D;
+    position: relative;
+}
+
+.button::before{
+    content: "";
+    position: absolute;
+    background-color: #FF8126;
+    width: 28px;
+    height: 28px;
+    transform: rotate(45deg);
+    left:-14.5px;
+    top:5px;
+}
+
+.button::after{
+    content: "";
+    position: absolute;
+    background-color: #FF8126;
+    width: 28px;
+    height: 28px;
+    transform: rotate(45deg);
+    right:-14.5px;
+    bottom:6px;
+}
+
+.about-the-game{
+    height: 200vh;
+    background-image: url(../img/Background\(3\).svg);
+}
+
+.advantages{
+    height: 100vh;
+    background-image: url(../img/Background\(2\).svg);
+    display: flex;
+    flex-direction: column;
+}
+
+.advantages h2:nth-child(1){
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 50px;
+    margin-top: 70px;
+    margin-right:0px;
+}
+
+.advantages h2:nth-child(2){
+    color: white;
+    font-size: 50px;
+}
+
+.advantages h2:nth-child(3){
+    color: white;
+    font-size: 50px;
+}
+
+.bottom-line{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top:60px;
+    position: relative;
+}
+
+.bottom-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom-line h2{
+    display: flex;
+    justify-content: end;
+    margin-right: 140px;
+}
+
+.bottom-line img{
+    width:700px;
+}
+
+.bottom-line h2:nth-child(2){
+    color:#FF8126;
+
+}
+
+.bottom-line p{
+    color: white;
+    width:460px;
+    font-size:26px;
+}
+
+.P{
+    text-align: end;
+    margin-right: 140px !important;
+}
+
+.bottom-line h2 :nth-child(1){
+    margin-left:-80px;
+}
+
+.bottom-line img::before{
+    content:"";
+    position: absolute;
+    background-image: url(../img/Sci-Fi.svg);
+    left:0px;
+    top:0px;
+    width:50px;
+    height:50px;
+    background-color: white;
 }
