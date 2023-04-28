@@ -376,13 +376,65 @@ header{
     margin-left:-80px;
 }
 
-.bottom-line img::before{
+.bottom-line::before{
     content:"";
     position: absolute;
-    background-image: url(../img/Sci-Fi.svg);
+    background-image: url(../img/Sci-Fi.png);
     left:0px;
-    top:0px;
+    top:-50px;
     width:50px;
     height:50px;
-    background-color: white;
+    background-size: cover;
+}
+
+.bottom-line::after{
+    content:"";
+    position: absolute;
+    background-image: url(../img/Sci-Fi\ \(2\).svg);
+    bottom:-50px;
+    left:0px;
+    width:318px;
+    height:105px;
+}
+
+.advantages-footer{
+    width:98vw;
+    height:20px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin-top:90px;
+}
+
+.footer-wrapper{
+    display:flex;
+    height:25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-the-game h2:nth-child(1){
+    color:white;
+    font-size:50px;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.description{
+    color:white;
+    font-size:18px;
+    width:50vw;
+    text-align: center;
+    margin-top: 50px;
+    background-image: url(../img/Подложка.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding:50px 60px;
+}
+
+.about-the-game__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
