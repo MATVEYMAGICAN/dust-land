@@ -408,10 +408,8 @@ header{
 
 .footer-wrapper{
     display:flex;
-    height:25px;
+    height:20px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .about-the-game h2:nth-child(1){
@@ -437,4 +435,51 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.arsenal{
+    height:100vh;
+    background-color: #111214;
+}
+
+.setka{
+    background-image: url(../img/Сетка.svg);
+    width:1322px;
+    height:585px;
+    margin-left:6vw;
+    margin-top:10vh;
+    padding-left:500px;
+    padding-top:90px;
+}
+
+.arsenal h2:nth-child(1){
+    color:white;
+    font-size:40px;
+}
+
+.arsenal h2:nth-child(2){
+    color:#FF8126;
+    font-size:40px;
+}
+
+.arsenal .text{
+    width:460px;
+    margin-left:205px;
+    padding-top: 110px;
+    position: absolute;
+}
+
+.arsenal p{
+    color:white;
+    font-size:20px;
+    margin-top: 10px;
+    padding-bottom: 5px;
+}
+
+.P{
+    text-align: start;
+}
+
+.guns img{
+    position: absolute;
 }
