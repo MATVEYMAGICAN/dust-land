@@ -440,16 +440,21 @@ header{
 .arsenal{
     height:100vh;
     background-color: #111214;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
 .setka{
     background-image: url(../img/Сетка.svg);
-    width:1322px;
-    height:585px;
-    margin-left:6vw;
-    margin-top:10vh;
-    padding-left:500px;
-    padding-top:90px;
+    width:80vw;
+    height:80vh;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 100px;
 }
 
 .arsenal h2:nth-child(1){
@@ -464,16 +469,12 @@ header{
 
 .arsenal .text{
     width:460px;
-    margin-left:205px;
-    padding-top: 110px;
-    position: absolute;
 }
 
 .arsenal p{
     color:white;
     font-size:20px;
     margin-top: 10px;
-    padding-bottom: 5px;
 }
 
 .P{
@@ -481,5 +482,47 @@ header{
 }
 
 .guns img{
+    width:35vw;
+}
+
+.guns{
+    background-image: url(../img/Sci-Fi\ \(3\).svg);
+    width:50vw;
+    height:40vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position:relative;
+}
+
+.guns img:nth-child(3){
     position: absolute;
+    left:100px;
+    top:80px;
+}
+
+.guns img:nth-child(1){
+    position: absolute;
+    top:-70px;
+}
+
+.guns-shadow{
+    position:absolute;
+    background-color: #FF8E3D;
+    top:35%;
+    left:50%;
+    width:0px;
+    height:0px;
+    box-shadow: 0px 0px 150px 100px #FF8E3D;
+}
+
+.arsenal-wrapper div:nth-child(1){
+    transform: rotate(-180deg);
+}
+
+.arsenal-wrapper{
+    position: absolute;
+    display: flex;
+    height: 15px;
+    bottom:30px;
+    left:43%;
 }
